@@ -149,7 +149,7 @@ function myFunction() {
   function sprawdzanieCzyFormularzWypelniony(){
     if(!wypelnione.includes("false")) {
       dataLayer.push({’event’: ’x’});
-      document.show("event poszedl");
+      document.alert("event poszedl");
                                       }
   }
   
