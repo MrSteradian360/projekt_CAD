@@ -160,7 +160,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="formularz">
       <form method="" action="" name="myForm" id="form">
-        <h4>Imię</h4><input type="text" name="imie" onfocusout= "pole1(); dataLayer.push({’event’: ’y’}); document.alert('y poszedl');" id=pole1><br>
+        <h4>Imię</h4><input type="text" name="imie" onclick="document.alert('alert');" onfocusout= "pole1(); dataLayer.push({’event’: ’y’}); document.alert('y poszedl');" id=pole1><br>
         <h4>Nazwisko</h4><input type="text" name="nazwisko" onfocusout= "pole2();" id=pole2><br>
         <h4>Telefon</h4><input type="text" name="telefon" class="kolor2" onfocusout= "pole3();" id=pole3><br>
         <h4>Treść</h4><input type="text" name="treść" onfocusout= "pole4();" id=pole4><br>
