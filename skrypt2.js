@@ -110,4 +110,44 @@ function myFunction() {
     btnText.innerHTML = "Pokaż mniej";
     moreText.style.display = "inline";
   }
-}
+
+  
+  const wypelnione = [false, false, false, false]
+  
+  function pole1(){
+    var x1 = document.getElementById("pole1");
+    if(x1 != "") {
+      wypelnione[0] = true;
+    }
+    sprawdzanieCzyFormularzWypelniony();
+  }
+  
+  function pole2(){
+    var x2 = document.getElementById("pole2");
+        if(x2 != "") {
+      wypelnione[1] = true;
+    }
+     sprawdzanieCzyFormularzWypelniony();
+  }
+  
+  function pole3(){
+    var x3 = document.getElementById("pole3");
+        if(x3 != "") {
+      wypelnione[2] = true;
+    }
+     sprawdzanieCzyFormularzWypelniony();
+  }
+  
+  function pole4(){
+    var x4 = document.getElementById("pole4");
+        if(x4 != "") {
+      wypelnione[3] = true;
+    }
+     sprawdzanieCzyFormularzWypelniony();
+  }
+  
+  function sprawdzanieCzyFormularzWypelniony(){
+    if(!wypelnione.includes("false")) {dataLayer.push({’event’: ’x’});}
+  }
+  
+  
