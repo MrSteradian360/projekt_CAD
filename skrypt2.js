@@ -151,6 +151,7 @@ function myFunction() {
       dataLayer.push({’event’: ’x’});
       document.alert("event poszedl");
                                       }
+    else{document.alert("nie ma eventu");}
   }
   
   
